@@ -17,6 +17,6 @@ aws elasticbeanstalk create-application-version --application-name hots-bans \
     --region us-east-1
 
 # Update Elastic Beanstalk environment to new version
-aws elasticbeanstalk update-environment --environment-name hots-bans-env \
+aws elasticbeanstalk update-environment --environment-name hotsBans-env \
     --version-label $SHA1 \
     --region us-east-1
