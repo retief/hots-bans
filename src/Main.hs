@@ -1,9 +1,9 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Main where
 
-import Network.HTTP.Types.Status
-import Network.Wai
-import Network.Wai.Handler.Warp
+import           Network.HTTP.Types.Status
+import           Network.Wai
+import           Network.Wai.Handler.Warp
 
 app :: Application
 app req respond = do

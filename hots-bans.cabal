@@ -1,12 +1,12 @@
-name:                sample-elasticbeanstalk
+name:                hots-bans
 version:             0.1.0.0
 synopsis:            Simple project template from stack
 description:         Please see README.md
-homepage:            https://github.com/folsen/sample-elasticbeanstalk#readme
+homepage:            https://github.com/retief/hots-bans#readme
 license:             MIT
 license-file:        LICENSE
-author:              Fredrik
-maintainer:          fredrik@dekompile.com
+author:              William Zimrin
+maintainer:          retief1@gmail.com
 copyright:           MIT
 category:            Web
 build-type:          Simple
