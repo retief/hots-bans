@@ -28,6 +28,5 @@ deployment:
     branch: master
     commands:
       - stack --no-terminal install --local-bin-path .
-      - docker build --rm=false -t <account-id>.dkr.ecr.<region>.amazonaws.com/<repo>:$CIRCLE_SHA1 -f Dockerfile.deploy .
+      - docker build --rm=false -t 443955892116.dkr.ecr.us-east-1.amazonaws.com/hots-dockers:$CIRCLE_SHA1 -f Dockerfile.deploy .
       - ./deploy.sh $CIRCLE_SHA1
-

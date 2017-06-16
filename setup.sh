@@ -1,8 +1,8 @@
 CIUSER=ci
-ACCOUNTID=<account-id>
+ACCOUNTID=443955892116
 
 # Create ECR repo
-aws ecr create-repository <repo> --region <region>
+aws ecr create-repository hots-dockers --region us-east-1
 
 # Create the CI user with appropricate permissions
 aws iam create-user --user-name $CIUSER

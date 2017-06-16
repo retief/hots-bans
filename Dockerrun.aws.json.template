@@ -1,7 +1,7 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "<account-id>.dkr.ecr.<region>.amazonaws.com/<repo>:<TAG>",
+    "Name": "443955892116.dkr.ecr.us-east-1.amazonaws.com/hots-dockers:<TAG>",
     "Update": "true"
   },
   "Ports": [
