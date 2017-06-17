@@ -1,2 +1,2 @@
 main :: IO ()
-main = putStrLn "Tests pass!"
+main = putStrLn "No Tests pass!"
