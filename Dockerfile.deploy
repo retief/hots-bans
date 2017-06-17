@@ -5,6 +5,6 @@ WORKDIR /app
 
 ADD sample-elasticbeanstalk /app
 
-EXPOSE 5000
+EXPOSE 8000
 
 CMD ["/app/sample-elasticbeanstalk"]
