@@ -25,4 +25,4 @@ cabal.project.local
 *.dump-hi
 log/
 site_key.txt
-user.json
+users.json
