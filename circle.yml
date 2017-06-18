@@ -16,17 +16,17 @@ dependencies:
     - sudo apt-get install -y stack
     - pip install awscli
   override:
-    - stack --no-terminal setup
-    - stack --no-terminal build --test --only-dependencies -j1
+    - stack --no-terminal --no-docker setup
+    - stack --no-terminal --no-docker build --test --only-dependencies -j1
 
 test:
   override:
-    - stack --no-terminal test
+    - stack --no-terminal --no-docker test
 
 deployment:
   elasticbeanstalk:
     branch: master
     commands:
-      - stack --no-terminal install --local-bin-path .
+      - stack --no-terminal --no-docker install --local-bin-path .
       - docker build --rm=false -t 443955892116.dkr.ecr.us-east-1.amazonaws.com/hots-dockers:$CIRCLE_SHA1 -f Dockerfile.deploy .
       - ./deploy.sh $CIRCLE_SHA1

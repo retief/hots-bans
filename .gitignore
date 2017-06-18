@@ -26,3 +26,4 @@ cabal.project.local
 log/
 site_key.txt
 users.json
+hots-bans

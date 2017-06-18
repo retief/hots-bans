@@ -3,7 +3,7 @@ FROM fpco/stack-run:latest
 RUN mkdir -p /app
 WORKDIR /app
 
-ADD hots-bans /app
+ADD . /app
 
 EXPOSE 8000
 
